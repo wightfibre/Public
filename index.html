@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wightfibre HTML Invoice V1.1</title>
+    <link rel="stylesheet" id="mainStyleCSS" href="https://github.com/wightfibre/Public/blob/main/Invoice_style.css?raw=true" type="text/css" media="all"/>
+    <script src="https://kit.fontawesome.com/2d1b31f9ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="page">
+    <!-- Header -->
+    <div class="wrapper fullTop">
+        <table class="invoiceHeader">
+            <tr>
+                <td class="invoiceHeaderLogo leftCol">
+                    <img src="https://github.com/wightfibre/Public/blob/2c29dfc5621d1b1ee2101de2090cba81a5b86a86/images/Wightfibre-logo.png?raw=true" class="wightfibreLogo" alt="Wightfibre Logo"/>
+                </td>
+                <td class="invoiceHeaderDetails rightCol">
+                    <table class="billingDetailsPeriod">
+                        <tr>
+                            <td class="purpleBox leftCol">Billing period:</td>
+                            <td class="greyBox rightCol">23 Feb - 25 Mar</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td class="purpleBox leftCol">Direct Debit date:</td>
+                            <td class="greyBox rightCol">12 Mar 2021</td>
+                        </tr>
+                    </table>
+                    <table class="billingDetails">
+                        <tr class="dashBorderBottom">
+                            <td class="leftCol">Bill date:</td>
+                            <td class="rightCol rightAlign">24th February 2021</td>
+                        </tr>
+                        <tr class="dashBorderBottom">
+                            <td class="leftCol">Account number:</td>
+                            <td class="rightCol rightAlign">123445678</td>
+                        </tr>
+                        <tr class="dashBorderBottom">
+                            <td class="leftCol">Area reference:</td>
+                            <td class="rightCol rightAlign">24</td>
+                        </tr>
+                        <tr class="dashBorderBottom">
+                            <td class="leftCol">Page no:</td>
+                            <td class="rightCol rightAlign"><span class="pageX">1</span> of <span class="pageOf">3</span></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="rightCol rightAlign textSmall">This is not a tax invoice.</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- END OF HEADER -->
+
+    <!-- Main Content -->
+    <div class="wrapper">
+        <table class="mainContent">
+            <tr>
+                <td class="leftCol">
+                    <table class="addressTable">
+                        <tr>
+                            <td>
+                                <p>Mr T ESTS</p>
+                                <p>Address 1</p>
+                                <p>Address 2</p>
+                                <p>Isle of Wight</p>
+                                <p>PO12 3AB</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class="contentTable">
+                        <tr>
+                            <td>
+                                <h1 class="largerH1 purpleBorderBottom">Your Bill</h1>
+                                <div class="blueBox">
+                                    <h1>Coming Soon</h1>
+                                    <h3>Watch this space for more information about our WightFibre Customer portal coming soon</h3>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="rightCol">
+
+                    <!-- Bill Summary-->
+                    <h1 class="purpleBorderBottom">Bill Summary</h1>
+                    <table class="billSummary">
+                        <tr class="solidBorderBottom">
+                            <td class="leftCol">
+                                Owed from last bill
+                            </td>
+                            <td class="rightCol">
+                                £0.00
+                            </td>
+                        </tr>
+                        <tr class="dashBorderBottom">
+                            <td class="leftCol">
+                                <svg width="5" height="15">
+                                    <rect width="5" height="20" class="redRect"/>
+                                </svg>
+                                Package changes
+                            </td>
+                            <td class="rightCol text-align">
+                                Cr£2.81
+                            </td>
+                        </tr>
+                        <tr class="dashBorderBottom">
+                            <td class="leftCol">
+                                <svg width="5" height="15">
+                                    <rect width="5" height="20" class="blackRect"/>
+                                </svg>
+                                Your package
+                            </td>
+                            <td class="rightCol">
+                                £49.90
+                            </td>
+                        </tr>
+                        <tr class="dashBorderBottom">
+                            <td class="leftCol">
+                                <svg width="5" height="15">
+                                    <rect width="5" height="20" class="blueRect"/>
+                                </svg>
+                                Usage charges
+                            </td>
+                            <td class="rightCol">
+                                £0.00
+                            </td>
+                        </tr>
+                        <tr class="purpleBorderTop spacer">
+                            <td colspan="2" class="spacer"></td>
+                        </tr>
+                        <tr class="blueBox">
+                            <td class="leftCol amountDueText">
+                                Amount due
+                            </td>
+                            <td class="rightCol amountDue">
+                                £47.09
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- END Bill Summary-->
+
+                    <!-- Under Bill Summary-->
+                    <table class="underSummary">
+                        <tr class="shortTR">
+                            <td class="leftCol"><img src="https://github.com/wightfibre/Public/blob/2c29dfc5621d1b1ee2101de2090cba81a5b86a86/images/direct-debit.png?raw=true" alt="Direct debit Logo"/></td>
+                            <td class="rightCol textSmall">Your payment will be taken by Direct Debit on or immediately after <span>12th Mar 2021</span></td>
+                        </tr>
+                        <tr class="shortTR">
+                            <td colspan="2" class="">
+                                To answer any queries you may have regarding your bill, including information on our late payment and payment handling fees, please contact our Customer Services Team on 01983 24 24 24. Our Customer Services Team is available 8.00am - 8.00pm Monday to Friday, 9.00am - 6pm Saturday, 10am - 6pm Sunday.
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- END Under Bill Summary-->
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- END Main Content -->
+
+    <div class="pageBreak"></div> <!-- Page break for printing -->
+
+    <!-- Your bill breakdown HEADER -->
+    <div class="wrapper pageTitle printPadding">
+        <h1>Your bill breakdown</h1>
+    </div>
+    <!-- END Your bill breakdown HEADER -->
+
+    <!-- Bill Summary -->
+    <div class="wrapper">
+        <table class="paymentDetailsWrapper">
+            <tr>
+                <td class="leftCol">
+                    <table class="paymentDetailsTable ">
+                        <tr>
+                            <td colspan="2" class="purpleBorderBottom">
+                                <h2>Bill Summary</h2>
+                            </td>
+                        </tr>
+                        <tr class="solidBorderBottom">
+                            <td class="leftCol">
+                                Your last bill amount
+                            </td>
+                            <td class="rightCol alignRight">
+                                £77.95
+                            </td>
+                        </tr>
+                        <tr class="spacer">
+                            <td colspan="2" class="spacer"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="blueNotice">
+                                <i class="fas fa-exclamation-circle noticeIcon"></i>
+                                <div class="noticeText">Your previous bill was paid in full, thank you</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="paymentDetailsBreakdownWrapper">
+                                <table class="paymentDetailsBreakdown">
+                                    <tr class="header">
+                                        <td class="dateCol">Date</td>
+                                        <td class="descriptionCol">Descirption</td>
+                                        <td class="amountCol rightAlign">Amount</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dateCol">10 Feb</td>
+                                        <td class="descriptionCol">Payment - Thank you</td>
+                                        <td class="amountCol rightAlign">£50.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dateCol">12 Feb</td>
+                                        <td class="descriptionCol">Payment - Thank you</td>
+                                        <td class="amountCol rightAlign">£27.95</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="solidBorderBottom">
+                            <td class="leftCol">
+                                Total payments received
+                            </td>
+                            <td class="rightCol alignRight">
+                                Cr£77.95
+                            </td>
+                        </tr>
+
+                        <tr class="purpleBorderBottom">
+                            <td class="leftCo owedText">
+                                Owned from last bill
+                            </td>
+                            <td class="rightCol alignRight owedText">
+                                £0.00
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="middleSpacerCol">&nbsp;&nbsp;</td>
+                <td class="rightCol">
+                    <table class="paymentDetailsTable">
+                        <tr class="purpleBorderBottom">
+                            <td colspan="2">
+                                <h2>How it all works</h2>
+                            </td>
+                        </tr>
+                        <tr class="purpleBorderBottom">
+                            <td colspan="2">
+                                <table class="howItAllWorksTable">
+                                    <tr class="solidBorderBottomPurple indentedPadding">
+                                        <td>
+                                            <h3>Your last bill amount</h3>
+                                            <p>If applicable, this is the value of your last bill.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h3>Owned from last bill</h3>
+                                            <p>This is the amount that is still owing from your previous bill. If you're having issues paying your bill, please get in contact with us.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- END Bill Summary -->
+
+    <div class="pageBreak"></div> <!-- Page break for printing -->
+
+    <!-- Package Changes -->
+    <div class="wrapper printPadding">
+        <table class="paymentDetailsWrapper">
+            <tr>
+                <td class="leftCol">
+                    <table class="paymentDetailsTable">
+                        <tr>
+                            <td colspan="2" class="redBorderBottom">
+                                <h2>Package changes</h2>
+                            </td>
+                        </tr>
+                        <tr class="solidBorderBottom">
+                            <td class="leftCol regText" colspan="2">
+                                'Your package' covers the period <span class="purpleText boldText">26 February - 25 March</span>
+                            </td>
+                        </tr>
+                        <tr class="spacer">
+                            <td colspan="2" class="spacer"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="blueNotice">
+                                <i class="fas fa-exclamation-circle noticeIcon"></i>
+                                <div class="noticeText">Your package has changed. You have been <span class="boldText">credited Cr£9.06</span> for the services you removed on <span class="boldText">23 February</span>, and charge you <span class="boldText">£6.35</span> for the services
+                                                        you added at the same time. Those charges apply to the period charged on your last bill.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="paymentDetailsBreakdownWrapper">
+                                <table class="fullwidthTable solidBorderBottom">
+                                    <tr>
+                                        <td class="leftCol">
+                                            Credits (for services removed)
+                                        </td>
+                                        <td class="rightCol alignRight">
+                                            Cr£9.06
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="fullwidthTable">
+                                    <tr>
+                                        <td class="fullwidthTableLeftCol10">
+                                            <i class="fas fa-laptop fa-2x"></i>
+                                        </td>
+                                        <td class="fullwidthTableRightCol90">
+                                            <h3>Broadband</h3>
+                                            <ul class="dashedBulletedList">
+                                                <li>Discount</li>
+                                                <li>Full-Fibre 300</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fullwidthTableLeftCol10">
+                                            <i class="fas fa-phone fa-2x"></i>
+                                        </td>
+                                        <td class="fullwidthTableRightCol90">
+                                            <h3>Telephone</h3>
+                                            <ul class="dashedBulletedList">
+                                                <li>Evening & Weekends</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fullwidthTableLeftCol10">
+                                            <i class="fas fa-tv fa-2x"></i>
+                                        </td>
+                                        <td class="fullwidthTableRightCol90">
+                                            <h3>TV</h3>
+                                            <ul class="dashedBulletedList">
+
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+
+                        <tr class="solidBorderBottom">
+                            <td colspan="2" class="paymentDetailsBreakdownWrapper">
+                                <table class="fullwidthTable solidBorderBottom">
+                                    <tr>
+                                        <td class="leftCol">
+                                            Charges (for services added)
+                                        </td>
+                                        <td class="rightCol alignRight">
+                                            £6.25
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="fullwidthTable">
+                                    <tr>
+                                        <td class="fullwidthTableLeftCol10">
+                                            <i class="fas fa-laptop fa-2x redText"></i>
+                                        </td>
+                                        <td class="fullwidthTableRightCol90">
+                                            <h3>Broadband</h3>
+                                            <ul class="plusBulletedList">
+                                                <li>Full-Fibre 900</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fullwidthTableLeftCol10">
+                                            <i class="fas fa-phone fa-2x redText"></i>
+                                        </td>
+                                        <td class="fullwidthTableRightCol90">
+                                            <h3>Telephone</h3>
+                                            <ul class="plusBulletedList">
+                                                <li>Anytime Calls</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fullwidthTableLeftCol10">
+                                            <i class="fas fa-tv fa-2x redText"></i>
+                                        </td>
+                                        <td class="fullwidthTableRightCol90">
+                                            <h3>TV</h3>
+                                            <ul class="plusBulletedList">
+                                                <li>Netgem TV 4K</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr class="redBorderBottom">
+                            <td class="leftCo owedText">
+                                Package changes
+                            </td>
+                            <td class="rightCol alignRight owedText">
+                                Cr£2.81
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="middleSpacerCol">&nbsp;&nbsp;</td>
+                <td class="rightCol">
+                    <table class="paymentDetailsTable">
+                        <tr class="redBorderBottom">
+                            <td colspan="2">
+                                <h2>&nbsp;</h2>
+                            </td>
+                        </tr>
+                        <tr class="redBorderBottom">
+                            <td colspan="2">
+                                <table class="howItAllWorksTable">
+                                    <tr class="solidBorderBottomRed indentedPadding">
+                                        <td>
+                                            <h3>Package changes</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut eros sit amet elit eleifend sodales. Sed at enim at dui aliquam ornare. Curabitur faucibus
+                                               magna a tempus gravida. In euismod enim sagittis odio ultricies, dapibus bibendum arcu sagittis. Nulla euismod purus at dui tempus, eu maximus tortor consectetur.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="solidBorderBottomRed indentedPadding">
+                                        <td>
+                                            <h3>Credits (for services removed)</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut eros sit amet elit eleifend sodales. Sed at enim at dui aliquam ornare. Curabitur faucibus
+                                               magna a tempus gravida. In euismod enim sagittis odio ultricies, dapibus bibendum arcu sagittis. Nulla euismod purus at dui tempus, eu maximus tortor consectetur.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h3>Charges (for services added)</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut eros sit amet elit eleifend sodales. Sed at enim at dui aliquam ornare. Curabitur faucibus
+                                               magna a tempus gravida. In euismod enim sagittis odio ultricies, dapibus bibendum arcu sagittis. Nulla euismod purus at dui tempus, eu maximus tortor consectetur.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- END Package Changes -->
+
+    <div class="pageBreak"></div> <!-- Page break for printing -->
+
+    <!-- Your Package -->
+    <div class="wrapper printPadding">
+        <table class="paymentDetailsWrapper">
+            <tr>
+                <td class="leftCol">
+                    <table class="paymentDetailsTable">
+                        <tr>
+                            <td colspan="2" class="blackBorderBottom">
+                                <h2>Your package</h2>
+                            </td>
+                        </tr>
+                        <tr class="solidBorderBottom">
+                            <td class="leftCol regText" colspan="2">
+                                Your Package changes cover the period <span class="purpleText boldText">23 February - 25 February</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="paymentDetailsBreakdownWrapper">
+                                <table class="fullwidthTable solidBorderBottom">
+                                    <tr>
+                                        <td class="leftCol">
+                                            Bundle Charges
+                                        </td>
+                                        <td class="rightCol alignRight">
+                                            £59.90
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="fullwidthTable">
+                                    <tr>
+                                        <td class="fullwidthTableLeftCol10">
+                                            <i class="fas fa-laptop fa-2x"></i>
+                                        </td>
+                                        <td class="fullwidthTableRightCol90">
+                                            <h3>Broadband</h3>
+                                            <ul class="plusBulletedList">
+                                                <li>Full-Fibre 900</li>
+                                                <li>Discount</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fullwidthTableLeftCol10">
+                                            <i class="fas fa-phone fa-2x"></i>
+                                        </td>
+                                        <td class="fullwidthTableRightCol90">
+                                            <h3>Telephone</h3>
+                                            <ul class="plusBulletedList">
+                                                <li>Anytime Calls</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fullwidthTableLeftCol10">
+                                            <i class="fas fa-tv fa-2x"></i>
+                                        </td>
+                                        <td class="fullwidthTableRightCol90">
+                                            <h3>TV</h3>
+                                            <ul class="plusBulletedList">
+                                                <li>Netgem TV 4K</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="fullwidthTable solidBorderBottom">
+                                    <tr class="solidBorderBottom">
+                                        <td class="leftCol">
+                                            Promotions & discounts
+                                        </td>
+                                        <td class="rightCol alignRight">
+                                            Cr£10.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <table class="fullwidthTable">
+                                                <tr>
+                                                    <td class="fullwidthTableLeftCol10">
+                                                        <i class="fas fa-tag redText"></i>
+                                                    </td>
+                                                    <td class="fullwidthTableRightCol90">
+                                                        <p>You are receiving a discount that will end on 22 Aug 2022</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr class="blackBorderBottom">
+                            <td class="leftCo owedText">
+                                Your package
+                            </td>
+                            <td class="rightCol alignRight owedText">
+                                £49.90
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="middleSpacerCol">&nbsp;&nbsp;</td>
+                <td class="rightCol">
+                    <table class="paymentDetailsTable">
+                        <tr class="blackBorderBottom">
+                            <td colspan="2">
+                                <h2>How it all works</h2>
+                            </td>
+                        </tr>
+                        <tr class="blackBorderBottom">
+                            <td colspan="2">
+                                <table class="howItAllWorksTable">
+                                    <tr>
+                                        <td>
+                                            <h3>Your package</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut eros sit amet elit eleifend sodales. Sed at enim at dui aliquam ornare. Curabitur faucibus
+                                               magna a tempus gravida. In euismod enim sagittis odio ultricies, dapibus bibendum arcu sagittis. Nulla euismod purus at dui tempus, eu maximus tortor consectetur.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut eros sit amet elit eleifend sodales. Sed at enim at dui aliquam ornare. Curabitur faucibus
+                                               magna a tempus gravida. In euismod enim sagittis odio ultricies, dapibus bibendum arcu sagittis. Nulla euismod purus at dui tempus, eu maximus tortor consectetur.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut eros sit amet elit eleifend sodales. Sed at enim at dui aliquam ornare. Curabitur faucibus
+                                               magna a tempus gravida. In euismod enim sagittis odio ultricies, dapibus bibendum arcu sagittis. Nulla euismod purus at dui tempus, eu maximus tortor consectetur.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- END Your Package -->
+
+    <div class="pageBreak"></div> <!-- Page break for printing -->
+
+    <!-- Usage Charges -->
+    <div class="wrapper printPadding">
+        <table class="paymentDetailsWrapper">
+            <tr>
+                <td class="leftCol">
+                    <table class="paymentDetailsTable">
+                        <tr>
+                            <td colspan="2" class="blueBorderBottom">
+                                <h2>Usage charges</h2>
+                            </td>
+                        </tr>
+                        <tr class="spacer">
+                            <td colspan="2" class="spacer"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="blueNotice">
+                                <i class="fas fa-exclamation-circle noticeIcon"></i>
+                                <div class="noticeText">If you have purchase any movies or played an interactive games in the last month, you ll see those charges in this section.
+                                                        You'll also see any call charges that are outside your Talk plan.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="paymentDetailsBreakdownWrapper">
+                                <table class="fullwidthTable solidBorderBottom">
+                                    <tr>
+                                        <td class="leftCol">
+                                            Call usage charges
+                                        </td>
+                                        <td class="rightCol alignRight">
+                                            £50.00
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="paymentDetailsBreakdownWrapper">
+                                <table class="paymentDetailsBreakdown">
+                                    <tr>
+                                        <td class="leftCol regText">Calls for 01983 112345</td>
+                                        <td class="rightCol rightAlign regText usagePrice">£0.00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="leftCol regText">Movies</td>
+                                        <td class="rightCol rightAlign regText usagePrice">£50.00</td>
+                                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="blueBorderBottom">
+                            <td class="leftCo owedText">
+                                Usage charges
+                            <td class="rightCol alignRight owedText">
+                                £50.00
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="middleSpacerCol">&nbsp;&nbsp;</td>
+                <td class="rightCol">
+                    <table class="paymentDetailsTable">
+                        <tr class="blueBorderBottom">
+                            <td colspan="2">
+                                <h2>How it all works</h2>
+                            </td>
+                        </tr>
+                        <tr class="blueBorderBottom">
+                            <td colspan="2">
+                                <table class="howItAllWorksTable">
+                                    <tr>
+                                        <td>
+                                            <h3>Call usage charges</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut eros sit amet elit eleifend sodales. Sed at enim at dui aliquam ornare. Curabitur faucibus
+                                               magna a tempus gravida. In euismod enim sagittis odio ultricies, dapibus bibendum arcu sagittis. Nulla euismod purus at dui tempus, eu maximus tortor consectetur.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut eros sit amet elit eleifend sodales. Sed at enim at dui aliquam ornare. Curabitur faucibus
+                                               magna a tempus gravida. In euismod enim sagittis odio ultricies, dapibus bibendum arcu sagittis. Nulla euismod purus at dui tempus, eu maximus tortor consectetur.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- END Usage Charges -->
+</div>
+</body>
+</html>
