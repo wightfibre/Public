@@ -1,0 +1,611 @@
+/******* Variables *******/
+:root {
+    --purple: #4A5CA6;
+    --red: #262452;
+    --middleBlueBorder: #1F77BB;
+    --blue: #4096D2;
+    --green: #1c9424;
+    --light-blue: #c5ddf1;
+    --black: #000000;
+    --default-text: #000000;
+    --default-text2: #ffffff;
+    --grey-bg: #E0E0E0;
+    --light-grey-bg: #F4F4F4;
+    --dark-grey: #6e6e6e;
+    --font-reg: "bariolRegular", Arial, Helvetica, sans-serif;
+    --font-bold: "bariolBold", Arial, Helvetica, sans-serif;
+    --font-semi-bold: "bariolSemiBold", Arial, Helvetica, sans-serif;
+}
+
+/******* END Variables *******/
+
+/******* FONT *******/
+@font-face {
+    font-family: 'bariolRegular';
+    src: url('fonts/bariol_regular-webfont.eot');
+    src: url('fonts/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/bariol_regular-webfont.woff2') format('woff2'), url('fonts/bariol_regular-webfont.woff') format('woff'), url('fonts/bariol_regular-webfont.ttf') format('truetype'), url('fonts/bariol_regular-webfont.svg#bariolregular') format('svg');
+    font-weight: normal;
+    font-size: 12px;
+}
+
+@font-face {
+    font-family: 'bariolBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bariol Bold'), url('fonts/Bariol_Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'bariolSemiBold';
+    font-style: normal;
+    font-weight: 500;
+    src: url('fonts/bariol_regular-webfont.eot');
+    src: url('fonts/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/bariol_regular-webfont.woff2') format('woff2'), url('fonts/bariol_regular-webfont.woff') format('woff'), url('fonts/bariol_regular-webfont.ttf') format('truetype'), url('fonts/bariol_regular-webfont.svg#bariolregular') format('svg');
+}
+
+/******* END FONT *******/
+
+/******* Default *******/
+body, table, tr, td {
+    font-family: var(--font-reg);
+    color: var(--default-text);
+    font-size: 14px;
+    vertical-align: top;
+}
+
+/*table {*/
+/*    border: 1px solid var(--purple);*/
+/*}*/
+
+p {
+    text-align: justify;
+}
+
+.page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 0cm;
+    margin: 1cm auto;
+}
+
+h1 {
+    font-family: var(--font-bold);
+    font-size: 30px;
+    color: var(--default-text);
+    margin-bottom: 4px;
+    margin-left: 4px;
+}
+
+.largerH1 {
+    font-size: 45px;
+}
+h2 {
+    font-family: var(--font-bold);
+    font-size: 22px;
+    color: var(--default-text);
+    margin-bottom: 4px;
+    margin-left: 4px;
+}
+
+h3 {
+    font-family: var(--font-bold);
+    font-size: 20px;
+    color: var(--default-text);
+    margin-bottom: 4px;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.wrapper {
+    margin-top: -20px;
+    padding: 0 10px 10px;
+    margin-bottom: 50px;
+}
+
+.fullTop {
+    margin-top: 20px !important;
+}
+
+.pageTitle {
+
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.spacer {
+    height: 4px !important;
+}
+
+.blueNotice {
+    background-color: var(--light-blue);
+    color: var(--default-text);
+    height: 10px;
+    font-family: var(--font-reg);
+    border-collapse: separate;
+    padding: 10px 10px 10px 20px;
+}
+
+.blueNotice span {
+    margin-left: 15px;
+    font-family: var(--font-reg);
+    font-size: 12px;
+}
+
+.dashBorderBottom {
+    border-bottom: 1px dashed var(--dark-grey);
+}
+
+.solidBorderBottom {
+    border-bottom: 1px solid var(--dark-grey);
+}
+
+.solidBorderBottomRed {
+    border-bottom: 1px solid var(--middleBlueBorder);
+}
+
+.solidBorderBottomPurple {
+    border-bottom: 1px solid var(--purple);
+}
+
+.textSmall {
+    font-family: var(--font-reg);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.boldText {
+    margin-left: 0 !important;
+    font-family: var(--font-bold) !important;
+    font-weight: bold !important;
+}
+
+.regText {
+    font-size: 12px !important;
+    font-family: var(--font-reg) !important;
+}
+
+.purpleText {
+    color: var(--purple) !important;
+}
+
+.fullwidthTable {
+    width: 100%;
+    vertical-align: middle;
+    border-collapse: collapse;
+}
+
+.fullwidthTableCol {
+    width: 100%;
+    padding-left: 15px;
+
+}
+
+.fullwidthTableLeftCol10 {
+    width: 5%;
+    padding-left: 15px;
+    text-align: center;
+    vertical-align: top !important;
+    padding-top: 20px;
+}
+
+.fullwidthTableRightCol90 {
+    width: 95%;
+    padding-top: 5px;
+}
+
+ul.dashedBulletedList {
+    list-style: none;
+    margin-left: 15px;
+    padding-left: 1em;
+
+}
+
+ul.dashedBulletedList > li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+    font-family: var(--font-bold) !important;
+}
+
+ul.plusBulletedList {
+    list-style: none;
+    margin-left: 15px;
+    padding-left: 1em;
+
+}
+
+ul.plusBulletedList > li:before {
+    display: inline-block;
+    content: "+";
+    width: 1em;
+    margin-left: -1em;
+    font-family: var(--font-bold) !important;
+    color: var(--green);
+}
+
+.redText {
+    color: var(--red);
+}
+
+.greenText {
+    color: var(--green);
+}
+
+/******* END Default *******/
+
+/******* Columns *******/
+.leftCol {
+    width: 60%;
+}
+
+.rightCol {
+    width: 40%;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+/******* END Columns *******/
+
+/******* Print *******/
+@page {
+    margin: 2mm;
+}
+
+@media print {
+    body {
+        padding-top: 6cm;
+    }
+
+    .invoiceHeader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 8cm;
+        z-index: -1;
+
+    }
+
+    .printPadding {
+        padding-top: 6cm;
+    }
+}
+
+.pageBreak {
+    page-break-after: always
+}
+
+/******* END Print *******/
+
+/******* Header *******/
+.invoiceHeader {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.billingDetails, .billingDetailsPeriod {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.billingDetails {
+    margin-top: 10px;
+}
+
+.billingDetails tr {
+    height: 30px;
+}
+
+.billingDetails .leftCol, .billingDetailsPeriod .leftCol {
+    width: 50%;
+}
+
+.billingDetails .rightCol, .billingDetailsPeriod .rightCol {
+    width: 50%;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+.billingDetailsPeriod .purpleBox {
+    background-color: var(--purple);
+    color: var(--default-text2);
+    padding: 10px;
+    text-align: right;
+    font-family: var(--font-bold);
+}
+
+.billingDetailsPeriod .greyBox {
+    background-color: var(--grey-bg);
+    color: var(--default-text);
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font-bold);
+    vertical-align: middle;
+}
+
+.billingDetails tr td {
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+/******* END HEADER *******/
+
+/******* Main Content *******/
+.mainContent {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.purpleBorderBottom {
+    border-bottom: 3px solid var(--purple);
+}
+
+.redBorderBottom {
+    border-bottom: 3px solid var(--middleBlueBorder);
+}
+
+.blackBorderBottom {
+    border-bottom: 3px solid var(--black);
+}
+
+.blueBorderBottom {
+    border-bottom: 3px solid var(--blue);
+}
+
+.purpleBorderTop {
+    border-top: 3px solid var(--purple);
+}
+
+.mainContent tr td {
+    height: 20px;
+    padding-right: 20px;
+}
+
+.billSummary {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.billSummary .leftCol {
+    width: 70%;
+    font-size: 18px;
+    padding-left: 10px;
+    font-family: var(--font-semi-bold);
+}
+
+.billSummary .rightCol {
+    width: 30%;
+    text-align: right;
+}
+
+.billSummary tr, .underSummary tr {
+    height: 40px;
+    font-size: 20px;
+}
+
+.billSummary tr td, .underSummary tr td {
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+.redRect {
+    fill: var(--middleBlueBorder);
+}
+
+.blackRect {
+    fill: var(--black);
+}
+
+.blueRect {
+    fill: var(--blue);
+}
+
+.blueBox {
+    background-color: var(--light-blue);
+    color: var(--default-text2);
+    padding: 3px 20px 20px 20px;
+    margin-top: 80px;
+
+    text-align: center;
+}
+
+.billSummary .blueBox {
+    background-color: var(--light-blue);
+    color: var(--default-text2);
+    height: 40px;
+    font-family: var(--font-bold);
+    border-collapse: separate;
+}
+
+.billSummary .amountDue {
+    font-family: var(--font-bold);
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.billSummary .amountDueText {
+    font-family: var(--font-bold);
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.underSummary .shortTR {
+    height: 1px;
+}
+
+.underSummary .leftCol {
+    width: 10%;
+    font-size: 18px;
+    padding-left: 10px;
+    font-family: var(--font-reg);
+    text-align: right;
+}
+
+.underSummary .rightCol {
+    width: 90%;
+}
+
+.addressTable {
+    width: 100%;
+    margin-top: -100px;
+}
+
+.addressTable tr td {
+    vertical-align: top;
+    padding-right: 20px;
+}
+
+.addressTable p {
+    font-size: 16px;
+    margin: 5px;
+    font-family: var(--font-bold);
+}
+
+.paymentDetailsWrapper {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.paymentDetailsWrapper .leftCol {
+    width: 60%;
+    font-size: 18px;
+    padding-left: 10px;
+    font-family: var(--font-semi-bold);
+}
+
+.paymentDetailsWrapper .rightCol {
+    width: 40%;
+}
+
+.paymentDetailsWrapper tr {
+    height: 40px;
+    font-size: 20px;
+}
+
+.billSummary tr td, .underSummary tr td {
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+.paymentDetailsTable {
+    width: 100%;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+
+.paymentDetailsTable tr td {
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+.paymentDetailsTable .leftCol {
+    width: 70%;
+    font-size: 18px;
+    padding-left: 10px;
+    font-family: var(--font-bold);
+}
+
+.paymentDetailsTable .rightCol {
+    width: 20%;
+    font-size: 18px;
+    padding-right: 30px;
+    font-family: var(--font-bold);
+}
+
+.paymentDetailsTable .middleSpacerCol {
+    width: 10%;
+}
+
+.paymentDetailsBreakdownWrapper {
+    padding-top: 10px;
+}
+
+.paymentDetailsBreakdownWrapper {
+    padding-right: 0 !important;
+}
+
+.paymentDetailsBreakdown {
+    width: 100%;
+    border-collapse: collapse;
+    vertical-align: middle;
+    margin-left: 0;
+}
+
+.paymentDetailsBreakdown .dateCol {
+    width: 20%;
+    font-size: 12px;
+}
+
+.paymentDetailsBreakdown .descriptionCol {
+    width: 60%;
+    font-size: 12px;
+}
+
+.paymentDetailsBreakdown .amountCol {
+    width: 20%;
+    font-size: 12px;
+    padding-right: 40px;
+}
+
+.paymentDetailsBreakdown tr {
+    vertical-align: middle;
+    height: 25px;
+}
+
+.paymentDetailsBreakdown .header {
+    border-bottom: 1px solid var(--dark-grey);
+    height: 20px;
+    font-family: var(--font-bold);
+}
+
+.paymentDetailsTable .owedText {
+    padding-left: 10px;
+    font-family: var(--font-bold);
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.howItAllWorksTable {
+    width: 100%;
+    border-collapse: collapse;
+    vertical-align: middle;
+    margin: 15px;
+}
+
+.howItAllWorksTable h2 {
+    margin: 10px;
+}
+
+.howItAllWorksTable p {
+    font-size: 12px;
+    margin: 5px;
+}
+
+.usagePrice {
+    padding-right: 40px !important;
+}
+
+.noticeIcon {
+    width: 20px;
+    float: left;
+    vertical-align: middle;
+}
+
+.noticeText {
+    overflow: hidden
+}
+
+.marginSmall p, h4 {
+    margin-top: 1px;
+    margin-bottom: 4px;
+}
+
+/******* END Main Content *******/
